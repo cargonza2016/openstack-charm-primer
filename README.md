@@ -45,23 +45,23 @@ The purpose of the document is to provide developers a single and easy method in
   * External IRC Servers and Channels
     * #juju
     * #juju-dev
-#openstack - new user/ openstack component centric channel
-#openstack-dev - detail development discussion of openstack components
-#openstack-charms (Coming Soon) [RECOMMENDED] - channel to discuss openstack charming and charm items.
-#ubuntu-meeting
-#lxcontainers
-#ubuntu-server
+    * #openstack - new user/ openstack component centric channel
+    * #openstack-dev - detail development discussion of openstack components
+    * #openstack-charms (Coming Soon) [RECOMMENDED] - channel to discuss openstack charming and charm items.
+    * #ubuntu-meeting
+    * #lxcontainers
+    * #ubuntu-server
 5. Mailing List
-openstack@lists.openstack.org
-General User Questions
-Many projects use this mailing list.  For Charm-specific discussion, begin each message subject with [charms] to reach the desired audience, and to separate mailing list traffic.
-openstack-dev@lists.openstack.org
-Specific OpenStack Charm Questions and Openstack Component Development
-Many projects use this mailing list.  For Charm-specific discussion, begin each message subject with [charms] to reach the desired audience, and to separate mailing list traffic.
-juju@lists.ubuntu.com
-General Juju Questions
-juju-dev@lists.ubuntu.com
-Specific Juju development Questions
+  * openstack@lists.openstack.org
+   * General User Questions
+   * Many projects use this mailing list.  For Charm-specific discussion, begin each message subject with [charms] to reach the desired audience, and to separate mailing list traffic.
+  * openstack-dev@lists.openstack.org
+   * Specific OpenStack Charm Questions and Openstack Component Development
+   * Many projects use this mailing list.  For Charm-specific discussion, begin each message subject with [charms] to reach the desired audience, and to separate mailing list traffic.
+  * juju@lists.ubuntu.com
+   * General Juju Questions
+  * juju-dev@lists.ubuntu.com
+   * Specific Juju development Questions
 6. Juju Development - https://jujucharms.com/docs/stable/getting-started 
 7. Read Opensource/Openstack Developers Guide - http://docs.openstack.org/infra/manual/developers.html# 
 8. Developing Openstack Charms - https://github.com/openstack-charmers/openstack-community/
@@ -83,21 +83,19 @@ Openstack - https://github.com/openstack-charmers/openstack-community
 Charms - https://github.com/openstack-charmers/charm-guide 
 Packaging - https://wiki.ubuntu.com/OpenStack 
 Nova-LXD - https://linuxcontainers.org/lxd/getting-started-openstack/ 
-Release Information
 
+## Release Information
 Ubuntu Release Schedule - https://wiki.ubuntu.com/Releases 
 Openstack Release Schedule - http://releases.openstack.org 
 
-Canonical Openstack Product Information
+## Canonical Openstack Product Information
 Openstack.org Canonical Ubuntu Openstack Information: https://www.openstack.org/marketplace/distros/distribution/canonical/ubuntu-openstack
 
-Canonical Product Page:
+## Canonical Product Page:
 http://www.ubuntu.com/cloud/openstack 
 
-
-Test Tools
+## Test Tools
 https://github.com/openstack-charmers/openstack-community/blob/master/README.dev-charms.md 
-
 
 pep8/lint checks (including charm proof)
 unit tests
@@ -111,10 +109,11 @@ http://docs.openstack.org/developer/tempest/
 We have altering gating process - initially we’ll run a subset of amulet tests to provide immediate feedback to the contributor/reviewers; the full set of amulet tests will be executed once a reviewer has +2’ed the review prior to final landing.
 
 Code will be automatically landed by the OpenStack development process - no need to complete manual merges any longer!
-Release Management
+
+## Release Management
 http://docs.openstack.org/project-team-guide/release-management.html 
 
-Package Management
+### Package Management
 This is the process we undertake to bring our OpenStack packages up to date with their upstream counterparts. 
 
 
@@ -150,8 +149,8 @@ Once all is green submit the package to a local repository and ask for review an
 
 Our main over-arching goal is to keep the Ubuntu OpenStack packages as up to date with their upstream projects as possible. We don’t necessarily chase each commit (that’s what CI is for) but we do jump on top of any type of milestone or release candidate. We want our users to be able to install a new OpenStack revision the same day it gets released upstream and by keeping up with the milestones and release candidates we ensure most (if not all) of our packaging bugs are taken care of come release day. We consider this to be the best way to harden our release and is the primary reason over 55% of OpenStack users use Ubuntu. 
 
-Building
-Dependencies
+## Building
+### Dependencies
 
 These are packages that are required on your build system to run the bulk of the commands below successfully. This list is not exhaustive:
 
@@ -207,11 +206,11 @@ I.e. backportpackage -S ~ppa`date +%Y%m%d%H%M` -d xenial --upload ppa:ddellav/xe
 Install the package to make sure everything works, this is done best in a VM.
 If that builds and installs successfully you push to git and ask for review or push it directly if you have permissions. 
 
-Release Package Status
+## Release Package Status
 http://reqorts.qa.ubuntu.com/reports/ubuntu-server/cloud-archive/ 
 These packages are updated every 45 minutes.
 
-Repositories
+## Repositories
 
 Here are various repositories that is worth understanding. In various scenarios, packages are made available through specific location based on the priority and need. As an example, a specific bug fix that only affects one customer may be made available through a developer pps repository. 
 
@@ -244,27 +243,26 @@ More information on repositories can be found at the following location:
 https://help.ubuntu.com/community/Repositories/Ubuntu 
 
 
-Ecosystem
+## Ecosystem
 
-Using Juju with Openstack
-https://jujucharms.com/openstack
-MAAS, Juju, and Landscape with Openstack
-https://help.ubuntu.com/lts/clouddocs/en/Intro.html?_ga=1.29609215.1923604178.1456780510 
+* Using Juju with Openstack - https://jujucharms.com/openstack
+* MAAS, Juju, and Landscape with Openstack - https://help.ubuntu.com/lts/clouddocs/en/Intro.html?_ga=1.29609215.1923604178.1456780510 
+* Bootstack
 
-BLOGs, Youtube, etc.
+## BLOGs, Youtube, etc.
 
-Contents that the ecosystem team have developed and may be useful for to further understand the inner workings and projects of the team.
+#### Contents that the ecosystem team have developed and may be useful for to further understand the inner workings and projects of the team.
 
-Blogs:
+#### Blogs:
 http://blog.juju.solutions 
 
-Youtube:
+#### Youtube:
 https://www.youtube.com/channel/UCSsoSZBAZ3Ivlbt_fxyjIkw 
 
-Insights:
+#### Insights:
 https://insights.ubuntu.com 
 
-Discourse:
+#### Discourse:
 http://discourse.ubuntu.com 
 
 
